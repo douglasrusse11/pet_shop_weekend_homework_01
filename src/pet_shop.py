@@ -27,3 +27,6 @@ def find_pet_by_name(pet_shop, name):
     for pet in pet_shop["pets"]:
         if pet["name"] == name:
             return pet
+
+def add_pet_to_stock(pet_shop, pet):
+    pet_shop["pets"].append(pet)
